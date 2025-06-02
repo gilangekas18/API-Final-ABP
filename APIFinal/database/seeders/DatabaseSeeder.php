@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -13,8 +12,9 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         $this->call([
-            CategorySeeder::class, // <-- Tambahkan baris ini
-            // UserSeeder::class, // Jika Anda ingin mengaktifkan seeder User bawaan Laravel
+            CategorySeeder::class, // Pastikan baris ini ada
+            MenuSeeder::class,     // Pastikan baris ini ada
+            // UserSeeder::class,   // Ini opsional jika Anda punya UserSeeder
         ]);
     }
 }
